@@ -1,0 +1,106 @@
+body{
+    color: #00263e;
+    background-image: linear-gradient(rgba(255,105,180,1), rgba(225,186,0,1));
+    font-family: 'Nunito', sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inner-container {
+    padding: 1rem;
+}
+
+/* ***************** typography ***************** */
+
+h1 a {
+    color: #00263e;
+    text-decoration: none;
+}
+
+h1 {
+    letter-spacing: 5px;
+}
+
+h1::first-letter {
+    color: rgb(255,105,180)
+}
+
+h2 {
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+}
+
+/* ***************** header ***************** */
+
+header{
+    background-color: #fff;
+}
+
+.menu-icon {
+    width: 2.5rem;
+    text-align: center;
+}
+
+.main-menu li {
+    line-height: 85px;
+    border-bottom: 1px solid #e3eaf3;
+}
+
+.main-menu li:last-of-type {
+    border-bottom: none;
+}
+
+.main-menu a {
+    text-decoration: none;
+    display: block;
+    color: #f89d70;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-left: 0.625rem;
+}
+
+a.first-link {
+    font-size: 1.25rem;
+}
+
+.main-menu svg {
+    width: 15px;
+}
+
+.main-menu svg:first-of-type {
+    margin-right: 1rem;
+}
+
+.main-menu svg:last-of-type {
+    margin-left: auto;
+}
+
+.dropdown-menu{
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+.main-menu li:hover > .dropdown-menu {
+    max-height: 100vh;
+    overflow: visible;
+}
+
+nav {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+    left: 0;
+    background-color: #fff;
+}
+
+.active-nav {
+    max-height: 100vh;
+    overflow: visible;
+}
